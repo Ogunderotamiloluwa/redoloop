@@ -1,0 +1,380 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all{
+  width: 100%;
+ 
+  display: flex;
+  flex-direction: row;
+  color: white;
+  position: absolute; 
+ height: 30%;
+}
+.loopstudios{
+  color: white;
+  width: 30%;
+ font-size: 3rem;
+ font-weight: 400;
+transform: translate(40%,40%);
+}
+.navings{
+display: flex;
+gap: 1rem;
+padding-left: 30%;
+width: 70%;
+transform: translate(0%,50%);
+font-size: 1rem;
+
+
+}
+.image1d1{
+height: 100vh;
+ width: 100%; 
+ object-fit: cover;
+}
+.image1d2{
+display: none;
+}
+.transparent{
+  display: flex;
+ transform: translate(10%,-150%);
+ width: 60%;
+ gap: 1rem;border-color: white;
+ border-style: solid;
+ border-width: 1px;
+ height: 40vh;
+ font-size: 3rem;
+ color: rgb(217, 216, 216);
+ align-items: center;
+ text-align: center; 
+}
+.all2{
+  width: 80%;
+  height: 00%;
+transform: translate(10%,-40%);
+display: flex;
+  flex-direction: row;
+
+}
+.img-div2d{
+width: 140%;
+height: 70vh;
+transform: translate(0%);
+object-fit: cover;
+}
+.img-div2m{
+display: none;
+}
+.text-al2{
+  width: 100%;
+  display: flex;
+  gap: 0,5rem;
+  background-color: whitesmoke;
+  flex-direction: column;
+  transform: translate(0%);
+}
+.interactive1,
+.interactive2 {
+  font-size: clamp(1rem, 4vw, 4rem); /* scales between 1rem and 3rem */
+  transform: translate(5%, 150%);
+  font-weight: 100;
+}
+
+.interactive3 {
+  font-size: clamp(0.5rem, 1.5vw, 1.5rem); /* smaller max size for subtlety */
+  transform: translate(5%, 100%);
+  color: rgb(149, 149, 149);
+}
+.creations-div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+ transform: translate(0%,-170%);
+}
+.creations{
+font-size: 3rem;
+width: 90%;
+transform: translate(3%);
+}
+.see-all {
+  width: 10%;
+  font-size: 1rem;
+  color:black;
+  background-color:white;
+  transform: translate(-20%,10%);
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  height: 40px; /* Set height for vertical centering, adjust as needed */
+  border-radius: 10px;
+  cursor: pointer;
+}
+.see-all:hover{
+   background-color:black;
+   color: white;
+   transition: 0.5s;
+}
+.see-all:active{
+   background-color:black;
+   color: white;
+   transition: 0.5s;
+}
+.allpics,.allpics2{
+  width: 100%;
+
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+ 
+}
+.allpics2{
+  transform: translate(0%,10%);
+}
+
+.allpics img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 auto; /* makes each image shrink/grow */
+  object-fit: cover; /* optional: better fit */
+  transform: translate(30%);
+}
+.allpics2 img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 auto; /* makes each image shrink/grow */
+  object-fit: cover; /* optional: better fit */
+  transform: translate(30%);
+}
+.deep-earth{
+  color: white; transform: translate(30%,-150%);
+  gap: 1rem;
+  font-size: 2rem;
+}
+.allpicsm,.allpics2m{
+  display: none;
+}
+
+.last-background{
+  width: 100%;
+  background-color: black;
+  height: 80%;
+  transform: translate(0%,30%);
+}
+.loopstudios-end{
+  height: 30vh;
+  font-size: 2rem;
+  color: white;
+  transform: translate(10%,20%);
+}
+.menubar{
+  display: none;
+  
+}
+.dashbordlast-background{
+ color: white;
+ display: flex;
+ flex-direction: row;
+ gap: 2rem;
+ font-size: 1.2rem;
+ top: 50%;
+ position: absolute;
+ cursor: pointer;
+}
+.hiddennav{
+  display: none;
+}
+
+@media (max-width: 650px) {
+.all{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  position: absolute; 
+ height: 30%;
+ transform: translate(15%);
+}
+.loopstudios{
+  color: white;
+  width: 30%;
+ font-size: 2rem;
+ font-weight: 400;
+transform: translate(40%,10%);
+}
+.navings{
+display: flex;
+gap: 1rem;
+padding-left: 30%;
+width: 70%;
+transform: translate(15%,40%);
+font-size: 1rem;
+flex-direction: column;
+
+}
+.image1d1{
+height: 70vh;
+ width: 110%; 
+ object-fit: cover;
+padding-left: 0%;
+
+}
+.transparent{
+  display: flex;
+ transform: translate(0%,-150%);
+ width: 70%;
+ gap: 1rem;border-color: white;
+ border-style: solid;
+ border-width: 1px;
+ height: 30vh;
+ font-size: 2rem;
+ color: rgb(217, 216, 216);
+ align-items: center;
+ text-align: center; 
+}
+
+
+
+
+
+
+.img-div2d{
+display: none;
+}
+.img-div2m{
+display: block;
+width: 100%;
+position: relative;
+ object-fit: cover;
+
+}
+.all2{
+  width: 80%;
+  height: 50%;
+display: flex;
+  flex-direction: column;
+transform: translate(10%,-20%);
+object-fit: cover;
+}
+.text-al2{
+  width: 100%;
+  display: flex;
+  height: 0;
+  gap: 0,5rem;
+  background-color: whitesmoke;
+  flex-direction: column;
+  transform: translate(0%,20%);
+}
+.interactive1,
+.interactive2 {
+  font-size: clamp(2rem, 5vw, 5rem); /* scales between 1rem and 3rem */
+  transform: translate(15%, 70%);
+  font-weight: 100;
+}
+
+.interactive3 {
+font-size: 1.2rem;
+  transform: translate(3%, 40%);
+  color: rgb(149, 149, 149);
+ 
+}
+.creations-div{
+  position: absolute;
+}
+.creations {
+  font-size: 2rem;
+  width: 100%;
+  position: relative;
+  top: 65%;   /* adjust to match visual needs */
+  left: 16%;
+  transform: translate(5%, 1500%); /* or remove entirely */
+}
+.see-all {
+display: none;
+}
+.allpics,.allpics2{
+display: none;
+}
+.allpicsm,.allpics2m{
+ width: 100%;
+ display: block;
+ transform: translate(5%,70%);
+ display: flex;
+ flex-direction: column;
+ gap: -3rem;
+  object-fit: cover;
+  position: absolute;
+}
+.allpicsm img,
+.allpics2m img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* or "contain", depending on your layout needs */
+    position: relative; /* Container should have a position */
+  overflow: hidden
+}
+.last-background {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  height: 60vh;
+ transform: translate(0%,770%);
+}
+.loopstudios-end{
+  font-size: 2rem;
+  color: white;
+  transform: translate(20%,10%);
+}
+.menubar {
+  width: 30%;
+  display: block;
+  position: relative;
+  left: 0;
+  top: -100%;
+}
+
+.imagemenu {
+  width: 60%;
+  height: auto; /* Maintains aspect ratio */
+  cursor: pointer;
+  position: absolute; /* Fixed relative to the nearest positioned ancestor */
+  bottom: 550%; /* Adjust as needed */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Precisely center it */
+  display: flex;
+  
+}
+.dashbordlast-background{
+ color: white;
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;
+ font-size: 1rem;
+ top: 30%;
+ position: absolute;
+ cursor: pointer;
+ transform: translate(300%,0%);
+}
+.hiddennav {
+  position: absolute;
+  display: flex; /* This needs to stay! */
+  flex-direction: column;
+  font-size: 1rem;
+  color: white;
+  width: 15%;
+  background-color: black;
+  gap: 2rem;
+  cursor: pointer;
+  align-items: center;
+  top: 10%;
+  left: 80%;
+}
+}
