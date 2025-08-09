@@ -1,24 +1,22 @@
 
-    function showMenu() {
-  document.querySelector('.hiddennav').innerHTML = `
-    <nav>About</nav>
-    <nav>Carieer</nav>
-    <nav>Event</nav>
-    <nav>Product</nav>
-    <nav>Support</nav>
-  `;
-}
+let all = `
+  <div class="disappear">
+   <p class="ex">X</p>
+    <p class="belowex">About</p>
+    <p  class="belowex">Career</p>
+    <p class="belowex">Events</p>
+    <p class="belowex">Products</p>
+    <p class="belowex">Support</p>
+  </div>
+`;
 
-let show1 = false;
+let show1 = document.querySelector('.show');
+let hideEl = document.querySelector('.hide');
 
-document.addEventListener('click', () => {
-  if (!show1) {
-    showMenu();
-    show1 = true;
+show1.addEventListener('click', () => {
+  if (hideEl.children.length > 0) {
+    hideEl.innerHTML = '';
   } else {
-    // Optional: clear the menu or toggle differently
-    document.querySelector('.hiddennav').innerHTML = '';
-    show1 = false;
+    hideEl.innerHTML = all;
   }
-})
-   
+});

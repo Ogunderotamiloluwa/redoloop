@@ -6,27 +6,34 @@
 
 .all{
   width: 100%;
- 
   display: flex;
   flex-direction: row;
   color: white;
   position: absolute; 
  height: 30%;
+
+
+
+
+
+  transform: translate(-50%, -50%);
 }
 .loopstudios{
   color: white;
   width: 30%;
  font-size: 3rem;
  font-weight: 400;
-transform: translate(40%,40%);
+transform: translate(200%,60%);
+
 }
 .navings{
 display: flex;
 gap: 1rem;
 padding-left: 30%;
 width: 70%;
-transform: translate(0%,50%);
+transform: translate(60%,100%);
 font-size: 1rem;
+
 
 
 }
@@ -191,190 +198,359 @@ transform: translate(3%);
 .hiddennav{
   display: none;
 }
+.mobileloopstd{
+  display: none;
+}
 
-@media (max-width: 650px) {
-.all{
+.allpics:hover>:not(:hover){
+  opacity: 0.3;
+  text-shadow: black;
+  text-shadow: 5px;
+  cursor: pointer;
+}
+.allpics2:hover>:not(:hover){
+  opacity: 0.3;
+  text-shadow: black;
+  text-shadow: 5px;
+  cursor: pointer;
+}
+
+.pics1d:hover{
+  transform: scale(1.1);
+}
+.pics2d:hover{
+  transform: scale(1.1);
+}
+.pics3d:hover{
+  transform: scale(1.1);
+}
+.pics4d:hover{
+  transform: scale(1.1);
+}
+.pics1d2:hover{
+  transform: scale(1.1);
+}
+.pics2d2:hover{
+  transform: scale(1.1);
+}
+.pics3d2:hover{
+  transform: scale(1.1);
+}
+.pics4d2:hover{
+  transform: scale(1.1);
+}
+.pics1d,.pics2d,.pics3d,.pics4d{
+   position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+   text-shadow: black;  
+}
+.pics1d2,.pics2d2,.pics3d2,.pics4d2{
+   position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+   text-shadow: black;  
+}
+.navbuttomd1:hover{
+color: white;
+text-decoration: underline;
+}
+.navbuttomd2:hover{
+color: white;
+text-decoration: underline;
+}
+.navbuttomd3:hover{
+color: white;
+text-decoration: underline;
+}
+.navbuttomd4:hover{
+color: white;
+text-decoration: underline;
+}
+.navbuttomd5:hover{
+color: white;
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  .pata{
+  display: none;
+}
+.mobileloopstd{
+ width: 100%;
+ height: 300vh;
+ display: block;
+ position: relative;
+}
+
+.firstimg{
   width: 100%;
+  height:80vh;
+  display: flex;
+  object-fit: cover;
+
+}
+.loopstudiosm{
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  display: flex;
+  bottom: 24%;
+  left: 5%;
+   font-size: clamp(2rem, 3vw, 3rem); 
+}
+.navimg{
   display: flex;
   flex-direction: row;
-  color: white;
-  position: absolute; 
- height: 30%;
- transform: translate(15%);
+   bottom: 26%;
+  left: 82%;
+  width: 2%;
+  height: 2%;
+  position: relative;
+  cursor: pointer;
 }
-.loopstudios{
-  color: white;
-  width: 30%;
- font-size: 2rem;
- font-weight: 400;
-transform: translate(40%,10%);
-}
-.navings{
-display: flex;
-gap: 1rem;
-padding-left: 30%;
-width: 70%;
-transform: translate(15%,40%);
-font-size: 1rem;
-flex-direction: column;
-
-}
-.image1d1{
-height: 70vh;
- width: 110%; 
- object-fit: cover;
-padding-left: 0%;
-
-}
-.transparent{
+.transparentd{
   display: flex;
- transform: translate(0%,-150%);
- width: 70%;
+ width: 80%;
  gap: 1rem;border-color: white;
  border-style: solid;
  border-width: 1px;
- height: 30vh;
+ height: 35vh;
  font-size: 2rem;
  color: rgb(217, 216, 216);
  align-items: center;
  text-align: center; 
+ position: relative;
+ left: 8%;
+   bottom: 22%;
 }
-
-
-
-
-
-
-.img-div2d{
-display: none;
-}
-.img-div2m{
-display: block;
-width: 100%;
-position: relative;
- object-fit: cover;
-
-}
-.all2{
-  width: 80%;
-  height: 50%;
-display: flex;
-  flex-direction: column;
-transform: translate(10%,-20%);
-object-fit: cover;
-}
-.text-al2{
-  width: 100%;
+.interactived{
+   width: 80%;
+  height:50vh;
   display: flex;
-  height: 0;
-  gap: 0,5rem;
-  background-color: whitesmoke;
-  flex-direction: column;
-  transform: translate(0%,20%);
+  object-fit: cover;
+  position: relative;
+  bottom: 10%;
+  left: 7%;
 }
-.interactive1,
-.interactive2 {
-  font-size: clamp(2rem, 5vw, 5rem); /* scales between 1rem and 3rem */
-  transform: translate(15%, 70%);
-  font-weight: 100;
+.interactivedtxt{
+  font-size: clamp(1.5rem, 6vw, 6rem); /* scales between 1rem and 3rem */
+  position: relative;
+  bottom: 8%;
+  left: 10%;
+  display: flex;
+  width:80% ;
 }
 
-.interactive3 {
-font-size: 1.2rem;
-  transform: translate(3%, 40%);
-  color: rgb(149, 149, 149);
+.interactivetxt2{
+  position: relative;
+  bottom: 5%;
+  left: 8%;
+  display: flex;
+  width:90%;
+   font-size: clamp(1rem, 5vw, 5rem);
+   color: linear-gradient(to right, white, black);;
+}
+.interactivetxt3{
+   font-size: clamp(1.5rem, 6.5vw, 6.5rem); /* scales between 1rem and 3rem */
+  position: relative;
+  left: 8%;
+  display: flex;
+  width:80% ;
+  font-style: initial;
+}
+.allimagemobile{
+width: 95%;
+ position: relative;
+ left: 1%;
+ top: 3%;
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+}
+.imagemobile1,.imagemobile2,.imagemobile3,.imagemobile4,.imagemobile5,.imagemobile6,.imagemobile7,.imagemobile8{
+    width: 100%;
+  display: flex;
+  object-fit: cover;
+  position: relative;
+  height: 30vh; 
+}
+.see-allm{
+  position: relative;
+  display: flex;
+  top: 4%;
+  height: 6vh;
+  width: 35%;
+  left: 20%;
+   font-size: 1rem;
+  color:black;
+  background-color:white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  cursor: pointer;
+}
+.see-allm:hover{
+   background-color:black;
+   color: white;
+   transition: 0.5s;
+}
+
+.imagemobile1div{
+  position: relative;
+}
+.deep-earthm{
+  display: flex;
+  position: absolute;
+  bottom: 25%;
+color: white;
+  font-size: 1.5rem;
+  left: 5%;
+}
+
+
+/*This code is still  under construction */
+.imagemobile1,.imagemobile2,.imagemobile3,.imagemobile4,.imagemobile5,.imagemobile6,.imagemobile7,.imagemobile8{
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+   text-shadow: black;   
+}
+.imagemobile1:hover{
+  transform: scale(1.1);
+}
+.imagemobile2:hover{
+  transform: scale(1.1);
+}
+.imagemobile3:hover{
+  transform: scale(1.1);
+}
+.imagemobile4:hover{
+  transform: scale(1.1);
+}
+.imagemobile5:hover{
+  transform: scale(1.1);
+}
+.imagemobile6:hover{
+  transform: scale(1.1);
+}
+.imagemobile7:hover{
+  transform: scale(1.1);
+}
+.imagemobile8:hover{
+  transform: scale(1.1);
+  text-shadow: black;
+}
+.imagemobile1div:hover>:not(:hover){
+  opacity: 0.3;
+  text-shadow: black;
+  text-shadow: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.last-backgroundmbox {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  position: relative;
+  top: 10%;
+  height: 60vh;
  
 }
-.creations-div{
-  position: absolute;
-}
-.creations {
-  font-size: 2rem;
-  width: 100%;
-  position: relative;
-  top: 65%;   /* adjust to match visual needs */
-  left: 16%;
-  transform: translate(5%, 1500%); /* or remove entirely */
-}
-.see-all {
-display: none;
-}
-.allpics,.allpics2{
-display: none;
-}
-.allpicsm,.allpics2m{
- width: 100%;
- display: block;
- transform: translate(5%,70%);
- display: flex;
- flex-direction: column;
- gap: -3rem;
-  object-fit: cover;
-  position: absolute;
-}
-.allpicsm img,
-.allpics2m img {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* or "contain", depending on your layout needs */
-    position: relative; /* Container should have a position */
-  overflow: hidden
-}
-.last-background {
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  height: 60vh;
- transform: translate(0%,770%);
-}
-.loopstudios-end{
-  font-size: 2rem;
+.last-backgroundmtxt1{
   color: white;
-  transform: translate(20%,10%);
+  font-size: 2rem;
+  position: inherit;bottom: 30%;
+ 
 }
-.menubar {
-  width: 30%;
-  display: block;
+.navbottom{
+   justify-content: center; 
+   display: flex;
+   color: white;
+   flex-direction: column;
+   gap: 1rem;
+   position: inherit;
+   right: 25%;
+   top: 5%;
+   cursor: pointer;
+}
+.navbuttom1:hover{
+  text-decoration: underline;
+  color: white;
+  transition: 0.05s;
+}
+.navbuttom2:hover{
+  text-decoration: underline;
+  color: white;
+  transition: 0.05s;
+}
+.navbuttom3:hover{
+  text-decoration: underline;
+  color: white;
+  transition: 0.05s;
+}
+.navbuttom4:hover{
+  text-decoration: underline;
+  color: white;
+  transition: 0.05s;
+}
+.navbuttom5:hover{
+  text-decoration: underline;
+  color: white;
+  transition: 0.05s;
+}
+.hide{
+  width: 100%;
+  color: white;
   position: relative;
-  left: 0;
-  top: -100%;
-}
-
-.imagemenu {
-  width: 60%;
-  height: auto; /* Maintains aspect ratio */
-  cursor: pointer;
-  position: absolute; /* Fixed relative to the nearest positioned ancestor */
-  bottom: 550%; /* Adjust as needed */
-  left: 50%; /* Center it horizontally */
-  transform: translateX(-50%); /* Precisely center it */
-  display: flex;
+top: 200%;
   
 }
-.dashbordlast-background{
- color: white;
- display: flex;
- flex-direction: column;
- gap: 2rem;
- font-size: 1rem;
- top: 30%;
- position: absolute;
- cursor: pointer;
- transform: translate(300%,0%);
-}
-.hiddennav {
-  position: absolute;
-  display: flex; /* This needs to stay! */
-  flex-direction: column;
-  font-size: 1rem;
-  color: white;
-  width: 15%;
-  background-color: black;
+.disappear{
+  display: flex;
   gap: 2rem;
-  cursor: pointer;
-  align-items: center;
+  flex-direction: column;
+   background-color: black;
+   position: relative;
+   
+}
+.ex{
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 70%;
   top: 10%;
-  left: 80%;
+  cursor: pointer;
+}
+.belowex{
+  position: relative;
+  left: 10%;
+  top: 10%;
 }
 }
